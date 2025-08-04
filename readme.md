@@ -13,6 +13,6 @@ Please see `lab_guide.md` for full setup and instructions.
 
 ## Contributors
 - David Irungu - 223405
-- Sarah Mongare
-- Allan Logedi
-- Stephen Okwiri
+- Sarah Mongare - 133834
+- Allan Logedi - 122182
+- Stephen Okwiri - 224160
