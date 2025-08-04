@@ -3,7 +3,7 @@
 
 ## Overview
 
-This lab introduces the Key-Value Data Model using Redis. You'll learn to install Redis via Docker, load product inventory data, and perform CRUD operations using Python.
+This lab introduces the Key-Value Data Model using Redis. We will install Redis via Docker, load product inventory data, and perform CRUD operations using Python.
 
 ---
 
@@ -109,11 +109,10 @@ Screenshot suggestions:
 
 ## 👥 6. Group Collaboration Summary
 
-| Name            | Role                        |
-|-----------------|-----------------------------|
-| Your Name       | Team Lead, Setup & Scripts  |
-| Member 2        | Docker & Markdown Guide     |
-| Member 3        | Data Generation & Testing   |
+David Gathage, - Setup & Scripts
+Stephen Okwiri - Docker & Markdown Guide
+Alan Logedi - Data Generation & Testing
+Sarah Mongare - Documentation & Reporting
 
 ---
 
