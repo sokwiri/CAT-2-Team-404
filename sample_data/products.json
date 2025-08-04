@@ -1,0 +1,162 @@
+{
+    "prod_1001": {
+        "name": "Product 1",
+        "category": "Home",
+        "price_KES": 1763.09,
+        "in_stock": true,
+        "quantity": 27,
+        "rating": 3.3
+    },
+    "prod_1002": {
+        "name": "Product 2",
+        "category": "Toys",
+        "price_KES": 3273.7,
+        "in_stock": true,
+        "quantity": 8,
+        "rating": 4.9
+    },
+    "prod_1003": {
+        "name": "Product 3",
+        "category": "Beauty",
+        "price_KES": 2501.63,
+        "in_stock": false,
+        "quantity": 45,
+        "rating": 4.8
+    },
+    "prod_1004": {
+        "name": "Product 4",
+        "category": "Clothing",
+        "price_KES": 1192.41,
+        "in_stock": true,
+        "quantity": 9,
+        "rating": 3.5
+    },
+    "prod_1005": {
+        "name": "Product 5",
+        "category": "Beauty",
+        "price_KES": 113.06,
+        "in_stock": true,
+        "quantity": 2,
+        "rating": 3.8
+    },
+    "prod_1006": {
+        "name": "Product 6",
+        "category": "Toys",
+        "price_KES": 2295.33,
+        "in_stock": true,
+        "quantity": 50,
+        "rating": 2.7
+    },
+    "prod_1007": {
+        "name": "Product 7",
+        "category": "Clothing",
+        "price_KES": 2763.42,
+        "in_stock": false,
+        "quantity": 25,
+        "rating": 5.0
+    },
+    "prod_1008": {
+        "name": "Product 8",
+        "category": "Beauty",
+        "price_KES": 1314.25,
+        "in_stock": false,
+        "quantity": 4,
+        "rating": 4.2
+    },
+    "prod_1009": {
+        "name": "Product 9",
+        "category": "Clothing",
+        "price_KES": 2143.25,
+        "in_stock": false,
+        "quantity": 22,
+        "rating": 4.6
+    },
+    "prod_1010": {
+        "name": "Product 10",
+        "category": "Clothing",
+        "price_KES": 126.18,
+        "in_stock": false,
+        "quantity": 4,
+        "rating": 3.7
+    },
+    "prod_1011": {
+        "name": "Product 11",
+        "category": "Clothing",
+        "price_KES": 1424.12,
+        "in_stock": false,
+        "quantity": 37,
+        "rating": 4.4
+    },
+    "prod_1012": {
+        "name": "Product 12",
+        "category": "Books",
+        "price_KES": 2025.87,
+        "in_stock": true,
+        "quantity": 20,
+        "rating": 3.6
+    },
+    "prod_1013": {
+        "name": "Product 13",
+        "category": "Stationery",
+        "price_KES": 2363.82,
+        "in_stock": true,
+        "quantity": 18,
+        "rating": 4.2
+    },
+    "prod_1014": {
+        "name": "Product 14",
+        "category": "Toys",
+        "price_KES": 1700.76,
+        "in_stock": false,
+        "quantity": 31,
+        "rating": 4.7
+    },
+    "prod_1015": {
+        "name": "Product 15",
+        "category": "Toys",
+        "price_KES": 4084.7,
+        "in_stock": true,
+        "quantity": 44,
+        "rating": 3.0
+    },
+    "prod_1016": {
+        "name": "Product 16",
+        "category": "Toys",
+        "price_KES": 4468.72,
+        "in_stock": false,
+        "quantity": 3,
+        "rating": 4.6
+    },
+    "prod_1017": {
+        "name": "Product 17",
+        "category": "Books",
+        "price_KES": 2693.9,
+        "in_stock": true,
+        "quantity": 47,
+        "rating": 2.6
+    },
+    "prod_1018": {
+        "name": "Product 18",
+        "category": "Books",
+        "price_KES": 1850.18,
+        "in_stock": false,
+        "quantity": 23,
+        "rating": 3.3
+    },
+    "prod_1019": {
+        "name": "Product 19",
+        "category": "Stationery",
+        "price_KES": 3187.87,
+        "in_stock": false,
+        "quantity": 14,
+        "rating": 4.0
+    },
+    "prod_1020": {
+        "name": "Product 20",
+        "category": "Toys",
+        "price_KES": 1851.83,
+        "in_stock": false,
+        "quantity": 30,
+        "rating": 4.5
+    }
+}
