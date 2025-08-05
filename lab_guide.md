@@ -17,7 +17,7 @@ This lab introduces the Key-Value Data Model using Redis: We will install Redis 
 
 ### Step 1: Clone the Lab Repository
 ```bash
-git clone https://github.com/your-username/product-inventory-kv-lab.git
+git clone https://github.com/sokwiri/CAT-2-Team-404
 cd product-inventory-kv-lab
 ```
 
