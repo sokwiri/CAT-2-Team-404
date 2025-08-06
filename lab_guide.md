@@ -73,13 +73,12 @@ E-commerce systems often require rapid lookup of product information by unique I
 - Simplicity
 - Scalability
 
-### Example Use:
-``````bash
-docker exec -it dis-kv-store redis-cli
-```
 
-``````
-Then at the prompt, type:
+### Example Use:
+```bash
+docker exec -it redis-kv-store redis-cli
+`````
+### Then, at the prompt, run:
 GET prod_1005
 ```
 
