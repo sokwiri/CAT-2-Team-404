@@ -74,7 +74,12 @@ E-commerce systems often require rapid lookup of product information by unique I
 - Scalability
 
 ### Example Use:
-```redis
+``````bash
+docker exec -it dis-kv-store redis-cli
+```
+
+``````
+Then at the prompt, type:
 GET prod_1005
 ```
 
