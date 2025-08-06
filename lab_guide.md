@@ -86,11 +86,11 @@ Expected Output:
 ```json
 {
   "name": "Product 5",
-  "category": "Books",
-  "price_KES": 780.50,
+  "category": "Beauty",
+  "price_KES": 113.06,
   "in_stock": true,
-  "quantity": 21,
-  "rating": 4.2
+  "quantity": 2,
+  "rating": 3.8
 }
 ```
 
