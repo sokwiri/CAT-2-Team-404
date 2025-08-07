@@ -34,6 +34,16 @@ def delete_product(product_id):
     else:
         print("❌ Product not found.")
 
+def read_all_products():
+    keys = r.keys("prod_*")
+    if not keys:
+        print("❌ No products found.")
+        return
+    print("📦 All Products:")
+    for key in keys:
+        data = r.get(key)
+        if data:
+            print(f"{key.decode()}: {json.loads(data)}")
 # Example operations:
 create_product("prod_1021", {
     "name": "New Product",
@@ -47,3 +57,4 @@ create_product("prod_1021", {
 read_product("prod_1021")
 update_product("prod_1021", "price_KES", 1499)
 delete_product("prod_1021")
+read_all_products()
