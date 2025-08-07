@@ -90,11 +90,9 @@ Use `interact_with_redis.py` to:
 ```bash
 python interact_with_redis.py
 ```
-### Visuals and Outputs
+## Step 5: Visuals and Outputs
 #### Example Use:
 1. Adding New Data
-
-
 ```redis
 SET prod_1021 '{"name": "Wireless Headphones", "category": "Electronics", "price_KES": 2500.00, "in_stock": true, "quantity": 15, "rating": 4.5}'
 ```
@@ -102,6 +100,7 @@ The expected output for this is:
 ```
 OK
 ```
+
 2. Read the Data
 To verify the data was added:
 ```redis
@@ -149,7 +148,7 @@ Output:
 (nil)
 ```
 
-## Group Collaboration Summary
+## 6. Group Collaboration Summary
 - David Gathage, - Setup & Scripts
 - Stephen Okwiri - Docker & Markdown Guide
 - Alan Logedi - Data Generation & Testing
