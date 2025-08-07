@@ -1,124 +1,154 @@
+# Lab on Non-Relational Data Models: Key Value Data Model
+<div align="center">
 
-# 🧪 Key-Value Store Hands-On Lab: Product Inventory Lookup
+## Team 404
+
+</div>
+
+### Members
+| Adm No.           | Name                                                                                                                                                                                                                                                                                     |
+|:-----------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **223405** | David Gathage                                                                                                                         |
+| **224160** | Stephen Okwiri                                                                                            |
+| **122182** | Alan Logedi                                                                                                               |
+| **133834** | Sarah Mongare                      
+
 
 ## Overview
+Key-Value Data Model is a non-relational database model with a simple structure where data is stored as a pair of a unique key and its associated value. It is optimized for fast read and write operations often in memory. It is designed to scale horizontally across distributed systems. It is also schema-flexible.
 
-This lab introduces the Key-Value Data Model using Redis: We will install Redis via Docker, load product inventory data, and perform CRUD operations using Python.
+Its uses include: caching, session storage in web applications and high speed real time data retrieval.
+
+Examples include DynamoDB and Redis.
+
+<div align="center">
+  <img src="image.png" alt="image">
+</div>
 
 ---
+## Lab Requirements
 
-## 🛠️ 1. Setup Instructions
+This lab simulates the key-value data model using Redis, it applies it to product inventory data and performs CRUD operations using Python.
 
-### Prerequisites
-- Docker installed
-- Python 3.8+
-- Visual Studio Code or any IDE
-- Git
+### Set-up Instructions
+#### Required Software
+- Docker
+- Redis via Docker
+- Python  version 3.8+
+- Visual Studio Code
+- VS Code Extension: Docker
+- Git and Git Bash
+- Github Desktop
 
-### Step 1: Clone the Lab Repository
+Approximate Time Required: 1hour
+
+## Step 1: Create a Github Repository
+In Github Desktop, go to File, click on create new repository: give it a name(CAT-2-Team-404) and publish to Github.
+
+From here, your group members can clone:
 ```bash
-git clone https://github.com/your-username/product-inventory-kv-lab.git
-cd product-inventory-kv-lab
+git clone https://github.com/sokwiri/CAT-2-Team-404.git
 ```
 
-### Step 2: Start Redis with Docker
+## Step 2: Start Redis with Docker and Install Python Dependencies
 ```bash
 docker-compose up -d
 ```
-
 Verify:
 ```bash
 docker ps
 ```
-
----
-
-## 💾 2. Load Sample Data
-
-### Step 1: Install Python Dependencies
 ```bash
 pip install redis
 ```
+---
+## Step 3: Load the Sample Data
+Go into the scripts folder and run the import_data.py file to load `products.json` into Redis using `product_id` as keys.
 
-### Step 2: Run Import Script
 ```bash
 cd scripts
 python import_data.py
 ```
+Output is:
+```
+Successfully imported 20 products into Redis.
+```
 
-This loads `products.json` into Redis using `product_id` as keys.
-
----
-
-## 🔁 3. Perform CRUD Operations
+## Step 4: Perform CRUD operations
+### Applied Scenario: Product Inventory
+E-commerce systems often require rapid lookup of product information by unique ID. A key-value store like Redis is ideal due to:
+1. Quick access
+2. Simplicity
+3. Scalability
 
 Use `interact_with_redis.py` to:
-- Add new products
-- Read product details
-- Update values (e.g., price, stock)
-- Delete entries
+- Add new products(Create)
+- Read product details(Read)
+- Update values (e.g., price, stock)(Update)
+- Delete entries(Delete)
 
-Example:
 ```bash
 python interact_with_redis.py
 ```
+### Visuals and Outputs
+#### Example Use:
+1. Adding New Data
 
----
-
-## 🔍 4. Applied Scenario: Product Inventory Lookup
-
-### Context:
-E-commerce systems often require rapid lookup of product information by unique ID. A key-value store like Redis is ideal due to:
-- Constant-time access
-- Simplicity
-- Scalability
-
-### Example Use:
 ```redis
-GET prod_1005
+SET prod_1021 '{"name": "Wireless Headphones", "category": "Electronics", "price_KES": 2500.00, "in_stock": true, "quantity": 15, "rating": 4.5}'
 ```
-
-Expected Output:
+The expected output for this is:
+```
+OK
+```
+2. Read the Data
+To verify the data was added:
+```redis
+GET prod_1021
+```
+Output:
 ```json
 {
-  "name": "Product 5",
-  "category": "Books",
-  "price_KES": 780.50,
+  "name": "Wireless Headphones",
+  "category": "Electronics", 
+  "price_KES": 2500.00,
   "in_stock": true,
-  "quantity": 21,
-  "rating": 4.2
+  "quantity": 15,
+  "rating": 4.5
 }
 ```
 
----
-
-## 🧪 5. Visuals and Output
-
-Sample command line output:
-
+3. Update the Data
+To update the price and quantity:
+```redis
+SET prod_1021 '{"name": "Wireless Headphones", "category": "Electronics", "price_KES": 2200.00, "in_stock": true, "quantity": 12, "rating": 4.5}'
 ```
-✅ Successfully imported 20 products into Redis.
-📦 Product Data: {'name': 'Product 6', 'price_KES': 299.99, 'in_stock': False, ...}
+Output:
+```
+OK
 ```
 
-Screenshot suggestions:
-- Redis CLI session
-- Python script output
+4. Delete the Data
+To remove a product from the database:
+```redis
+DEL prod_1021
+```
+Output:
+```
+(integer) 1
+```
 
----
+To verify deletion:
+```redis
+GET prod_1021
+```
+Output:
+```
+(nil)
+```
 
-## 👥 6. Group Collaboration Summary
-
-David Gathage, - Setup & Scripts
-Stephen Okwiri - Docker & Markdown Guide
-Alan Logedi - Data Generation & Testing
-Sarah Mongare - Documentation & Reporting
-
----
-
-## ✅ 7. Notes
-- Redis version: `7.2`
-- Python version: `3.10`
-- Tested on: Ubuntu 22.04, Windows 11
-
----
+## Group Collaboration Summary
+- David Gathage, - Setup & Scripts
+- Stephen Okwiri - Docker & Markdown Guide
+- Alan Logedi - Data Generation & Testing
+- Sarah Mongare - Documentation & Reporting
