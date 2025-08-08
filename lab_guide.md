@@ -91,8 +91,16 @@ Use `interact_with_redis.py` to:
 python interact_with_redis.py
 ```
 ## Step 5: Visuals and Outputs
+
+Use Redis CLI via Docker:
+
+```bash
+docker exec -it redis-kv-store redis-cli
+```
 #### Example Use:
+
 1. Adding New Data
+
 ```redis
 SET prod_1021 '{"name": "Wireless Headphones", "category": "Electronics", "price_KES": 2500.00, "in_stock": true, "quantity": 15, "rating": 4.5}'
 ```
