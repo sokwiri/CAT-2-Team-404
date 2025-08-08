@@ -40,7 +40,7 @@ This lab simulates the key-value data model using Redis, it applies it to produc
 - Git and Git Bash
 - Github Desktop
 
-Approximate Time Required: 1hour
+Approximate Time Required: 45minutes
 
 ## Step 1: Create a Github Repository
 In Github Desktop, go to File, click on create new repository: give it a name(CAT-2-Team-404) and publish to Github.
