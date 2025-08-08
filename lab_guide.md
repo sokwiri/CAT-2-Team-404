@@ -47,7 +47,7 @@ In Github Desktop, go to File, click on create new repository: give it a name(CA
 
 From here, your group members can clone:
 ```bash
-git clone https://github.com/sokwiri/CAT-2-Team-404.
+git clone https://github.com/sokwiri/CAT-2-Team-404
 ```
 
 ## Step 2: Start Redis with Docker and Install Python Dependencies
